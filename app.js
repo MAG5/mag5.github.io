@@ -3,7 +3,7 @@ const Koa = require('koa')
 const app = new Koa()
 
 app.use(ctx => {
-  ctx.body = `I'm ${os.hostname()}`
+  ctx.body = `This is ${os.hostname()}`
 })
 
 app.listen(8080, () => {
